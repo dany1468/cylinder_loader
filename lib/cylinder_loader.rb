@@ -1,5 +1,9 @@
-require "cylinder_loader/version"
+require 'redis/namespace'
+
+require 'cylinder_loader/version'
 
 module CylinderLoader
-  # Your code goes here...
+  def self.redis=(server)
+    @redis = server
+  end
 end
